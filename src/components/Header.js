@@ -78,7 +78,11 @@ function Header() {
         <Avatar src={user?.profileImage} />
       </IconButton>
 </>: <h1 onClick={signIn} style={{
-  color:"white"
+  color:"white",
+  cursor:"pointer",
+  padding:"7px 15px",
+  border:"2px solid white",
+  borderRadius:"10px"
 }}>login</h1>
       }
 

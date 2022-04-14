@@ -1,45 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/1513/651513-s"
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="A Hot disney + app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Hot Disney +</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon"
+    href="data:image/png;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="A Hot disney + app" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>Hot Disney +</title>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script> -->
-  </body>
+<body>
+
+  <div id="root"></div>
+
+</body>
+
 </html>
